@@ -1,58 +1,71 @@
 * {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  header {
-    background-color: rgb(3, 121, 111);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-  }
-  
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(112, 218, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(22, 43, 3, 0.95);
+  height: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  gap: 50px;                
+  flex-wrap: wrap;          
+  padding: 20px;
+  background-color: rgb(32 62 3 / 95%);
+  height: 92.3vh;
+  color: rgba(22, 43, 3, 0.95);
+  overflow-y: auto;   
+  font-weight: 962;}
+
+.column {
+  border: 4px solid rgb(112, 218, 13);
+  border-radius: 25px;
+  min-height: 300px;
+  width: 100%;              
+  max-width: 400px;          
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column > h3 {
+  font-size: 24px;
+  text-align: center;
+  background-color: rgb(112, 218, 13);
+}
+
+.column > p {
+  padding: 8px;
+  background-color: rgb(152, 196, 31);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.column > form > input {
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
   main {
-    display: flex;
-    align-items: center;
-    gap: 150px;
-    overflow-x: auto;
-    padding: 20px;
-    background-color: black;
-    padding-left: 500px;
-    height: 100vh;
+      flex-direction: column;  
+      gap: 20px;               
+  }
+}
 
-  }
-  
-  .column {
-    border: 4px solid rgb(3, 121, 111);;
-    border-radius: 25px;
-    min-height: 300px;
-    min-width: 340px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
+@media (max-width: 480px) {
   .column > h3 {
-    font-size: 24px;
-    text-align: center;
-    background-color: rgb(3, 121, 111);;
+      font-size: 20px;          
   }
-  
-  .column > p {
-    padding: 8px;
-    background-color: antiquewhite;
-    text-align: center;
-    border-radius: 8px;
-  }
-  
-  .column > form > input {
-    padding: 10px;
-    width: 100%;
-  }
-
-  
+}
